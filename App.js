@@ -1,15 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
-import { Home } from './src/Home';
+import React from 'react';
+import { SafeAreaView } from 'react-native';
+import Home from './src/Home';
 
 export default function App() {
   return (
-    <>
-      <StatusBar 
-        style="light"
-        backgroundColor='transparent' 
-        translucent
-      />
+    <SafeAreaView style={{ flex: 1 }}>
       <Home />
-    </>
+    </SafeAreaView>
   );
 }
